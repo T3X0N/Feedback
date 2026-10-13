@@ -1,0 +1,12 @@
+[
+  { "name": "Matemaatika", "teacher": "" },
+  { "name": "Eesti keel", "teacher": "" },
+  { "name": "Inglise keel", "teacher": "" },
+  { "name": "Vene keel", "teacher": "" },
+  { "name": "Füüsika", "teacher": "" },
+  { "name": "Keemia", "teacher": "" },
+  { "name": "Ajalugu", "teacher": "" },
+  { "name": "Programmeerimine", "teacher": "" },
+  { "name": "Andmebaasid", "teacher": "" },
+  { "name": "Veebiarendus", "teacher": "Tauri" }
+]
