@@ -75,15 +75,17 @@ Kujundus on responsive: telefonis muutuvad tabelid kaartideks.
 ### Failid
 
 ```
-server.js        Express server ja API
-db.js            MongoDB ühendus, skeem, indeksid ja päringud
-seed.js          näidisandmete lisamine (npm run seed)
-subjects.json    õppeained ja õpetajad
-.env.example     ühenduse seadistuse näidis
-validate.js      serveripoolne valideerimine
-public/          frontend (index.html = vorm, ylevaade.html = õpetaja vaade)
-test/            API testid
-docs/            Figma, Jira ja demo abimaterjal + ekraanipildid
+backend/
+  server.js        Express server ja API (serveerib ka kausta frontend/)
+  config.js        .env faili lugemine
+  db.js            MongoDB ühendus, skeem, indeksid ja päringud
+  seed.js          näidisandmete lisamine (npm run seed)
+  subjects.json    õppeained ja õpetajad
+  .env.example     ühenduse seadistuse näidis
+  validate.js      serveripoolne valideerimine
+  test/            API testid
+frontend/          index.html = vorm, ylevaade.html = õpetaja vaade, style.css
+docs/              Figma, Jira ja demo abimaterjal + ekraanipildid
 ```
 
 ### Andmebaas
