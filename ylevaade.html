@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="et">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ülevaade | Õppeainete tagasiside</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <a class="logo" href="index.html">📝 Õppeainete tagasiside</a>
+      <div class="nav-links">
+        <a href="index.html">Anna tagasisidet</a>
+        <a href="ylevaade.html" class="active">Ülevaade</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Tagasiside ülevaade</h1>
+    <p class="lead">Õpetaja / kooli töötaja vaade. Vali aine, et näha ainult selle tagasisidet.</p>
+
+    <section class="card">
+      <h2>Õppeainete võrdlus</h2>
+      <div id="stats-grid" class="stats-grid"></div>
+      <div class="table-wrap" style="margin-top:16px">
+        <table class="responsive" id="stats-table">
+          <thead><tr><th>Õppeaine</th><th>Õpetaja</th><th class="num">Vastuseid</th><th class="num">Keskmine</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="toolbar">
+        <h2 style="margin:0">Kõik tagasisided <span class="muted" id="fb-count"></span></h2>
+        <div class="field">
+          <label for="filter">Õppeaine</label>
+          <select id="filter"><option value="">Kõik õppeained</option></select>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="responsive" id="fb-table">
+          <thead>
+            <tr><th>Kuupäev</th><th>Õppeaine</th><th>Õpilane</th><th>Klass</th><th class="num">Hinne</th><th>Kommentaar</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="ylevaade.js"></script>
+</body>
+</html>
